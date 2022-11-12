@@ -133,7 +133,8 @@ header .navbar ul li a{
     -ms-border-radius: 5rem;
     -o-border-radius: 5rem;
 }
-header .navbar ul li a:hover{
+header .navbar ul li a:hover,
+header .navbar ul li a:focus{
     background: var(--main-color);
 }
 #menu{

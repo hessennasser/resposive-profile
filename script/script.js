@@ -1,18 +1,18 @@
-$(document).ready(function(){
+$(document).ready(function () {
 
-    $('#menu').click(function(){
-        $(this).toggleClass('fa-times');    
+    $('#menu').click(function () {
+        $(this).toggleClass('fa-times');
         $('header').toggleClass('toggle');
     });
 
-    $(window).on('scroll load',function(){
+    $(window).on('scroll load', function () {
 
-        $('#menu').removeClass('fa-times');    
+        $('#menu').removeClass('fa-times');
         $('header').removeClass('toggle');
 
-        if($(window).scrollTop() > 0){
+        if ($(window).scrollTop() > 0) {
             $('.top').show();
-        }else{
+        } else {
             $('.top').hide();
         }
 
@@ -20,14 +20,14 @@ $(document).ready(function(){
 
     // smooth scrolling 
 
-    $('a[href*="#"]').on('click',function(e){
-       e.preventDefault(); 
-       $('html, body').animate({
-        scrollTop : $($(this).attr('href')).offset().top,
-       },
+    $('a[href*="#"]').on('click', function (e) {
+        e.preventDefault();
+        $('html, body').animate({
+            scrollTop: $($(this).attr('href')).offset().top,
+        },
             500,
             'linear'
-       );
+        );
     });
 
 });
